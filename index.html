@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+        body {
+          font-family: "Karla", sans-serif;
+        }
+      }
+    </style>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: #3e52a3;
+        color: #c0df34;
+        color: #99a7bd;
+        color: #29b3b0;
+      }
+    </style>
+  </head>
+  <body class="bg-[#99a7bd]">
+    <div
+      class="container mb-10 grid grid-cols-1 lg:grid-cols-2 m-auto mt-20 h-fit w-2/3 lg:w-3/5"
+    >
+      <div class="community bg-white p-5 lg:p-10 lg:col-span-2 rounded-t-lg">
+        <h4 class="font-bold text-[#29b3b0] mb-5 text-lg">
+          Join our community
+        </h4>
+        <p class="font-bold text-[#c0df34] mb-5">
+          30-day, hassle-free money back guarantee
+        </p>
+        <p class="font-thin text-slate-400 text-ms lg:mr-24">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
+      <div class="subscribe bg-[#29b3b0] p-5 text-white lg:rounded-bl-lg">
+        <h4 class="mb-5 text-lg font-medium">Monthly Subscription</h4>
+        <div class="price flex items-center mb-3">
+          <h1 class="mr-5 text-3xl font-extrabold">&dollar;29</h1>
+          <p class="text-slate-300 font-thin">per month</p>
+        </div>
+        <p class="text-slate-300">
+          Full access for less than
+          <span class="text-slate-100">&dollar;1 a day</span>
+        </p>
+        <button class="bg-[#c0df34] w-full p-3 rounded-md mt-4 font-bold">
+          Sign Up
+        </button>
+      </div>
+
+      <dv
+        class="whyus bg-[#20918f] text-white p-5 rounded-b-lg lg:rounded-br-lg lg:rounded-bl-none"
+      >
+        <h4 class="mb-5 text-lg font-medium">Why Us</h4>
+        <p class="font-thin text-slate-300 mr-24">
+          Tutorials by industry experts Peer &amp; expert code review Coding
+          exercises Access to our GitHub repos Community forum Flashcard decks
+          New videos every week
+        </p>
+      </dv>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Agus Setiawan</a>.
+      </p>
+    </footer>
+  </body>
+</html>
